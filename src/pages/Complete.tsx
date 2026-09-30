@@ -1,6 +1,7 @@
-import { useNavigate } from "react-router-dom";
+// TODO: 구글폼 완성되면 이 링크를 실제 응모 폼 URL로 바꿔주세요.
+const GOOGLE_FORM_URL = "https://forms.gle/여기에-구글폼-링크-넣기";
 
-const assetPathPrefix = "/assets";
+const assetPathPrefix = `${import.meta.env.BASE_URL}assets`;
 const imgCharacters = `${assetPathPrefix}/0d53e.png`;
 const imgFence = `${assetPathPrefix}/b2669.svg`;
 const imgGrass = `${assetPathPrefix}/01bf0.svg`;
@@ -13,8 +14,6 @@ const imgWarningIcon = `${assetPathPrefix}/20e62.svg`;
 const imgArrowRight = `${assetPathPrefix}/010d0.svg`;
 
 export default function Complete() {
-  const navigate = useNavigate();
-
   return (
     <div
       className="min-h-screen w-full flex flex-col items-center"
@@ -79,7 +78,7 @@ export default function Complete() {
               추첨을 위해 아래 개인정보를 입력해주세요!
             </p>
             <button
-              onClick={() => navigate("/form")}
+              onClick={() => window.open(GOOGLE_FORM_URL, "_blank", "noopener,noreferrer")}
               className="flex items-center justify-center gap-4 rounded-[48px] cursor-pointer transition-opacity hover:opacity-90 active:opacity-75"
               style={{
                 backgroundColor: "#206c38",

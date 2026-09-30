@@ -2,7 +2,7 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import WrongAnswer from "./WrongAnswer";
 
-const assetPathPrefix = "/assets";
+const assetPathPrefix = `${import.meta.env.BASE_URL}assets`;
 const imgCowCoffee = `${assetPathPrefix}/5a6e3.png`;
 const imgMinistry = `${assetPathPrefix}/0e6be.svg`;
 const imgLivestock = `${assetPathPrefix}/9632e.svg`;

@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router-dom";
 
-const assetPathPrefix = "/assets";
+const assetPathPrefix = `${import.meta.env.BASE_URL}assets`;
 const imgArrowRight = `${assetPathPrefix}/010d0.svg`;
 
 interface WrongAnswerProps {
