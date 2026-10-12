@@ -76,7 +76,7 @@ export default function Quiz2Correct() {
                 <p className="whitespace-nowrap">
                   <span
                     className="text-[clamp(14px,4.4cqw,29px)]"
-                    style={{ fontFamily: hakgyo, backgroundColor: "#fff478", borderRadius: "0.15em", padding: "0 0.15em", boxDecorationBreak: "clone", WebkitBoxDecorationBreak: "clone" }}
+                    style={{ fontFamily: hakgyo, backgroundColor: "#fff478", borderRadius: "0.15em", padding: "0.15em 0.15em", boxDecorationBreak: "clone", WebkitBoxDecorationBreak: "clone" }}
                   >
                     저탄소 축산물 인증마크를 통해 확인
                   </span>

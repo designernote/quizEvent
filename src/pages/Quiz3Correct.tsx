@@ -76,7 +76,7 @@ export default function Quiz3Correct() {
                 <p className="whitespace-nowrap">
                   <span
                     className="text-[clamp(14px,4.3cqw,28px)]"
-                    style={{ fontFamily: hakgyo, backgroundColor: "#fff478", borderRadius: "0.15em", padding: "0 0.15em", boxDecorationBreak: "clone", WebkitBoxDecorationBreak: "clone" }}
+                    style={{ fontFamily: hakgyo, backgroundColor: "#fff478", borderRadius: "0.15em", padding: "0.15em 0.15em", boxDecorationBreak: "clone", WebkitBoxDecorationBreak: "clone" }}
                   >
                     이디야커피를 비롯한 우리 주변
                   </span>
