@@ -73,16 +73,15 @@ export default function Quiz1Correct() {
                 >
                   저탄소 인증 축산물은
                 </p>
-                <p
-                  className="text-[clamp(16px,4.85cqw,32px)] underline decoration-[#fff478] decoration-[30%] underline-offset-[0.15em]"
-                  style={{ fontFamily: hakgyo }}
-                >
-                  생산 과정에서 온실가스를 줄인
+                <p className="text-[clamp(16px,4.85cqw,32px)]" style={{ fontFamily: hakgyo }}>
+                  <span style={{ backgroundColor: "#fff478", borderRadius: "0.15em", padding: "0 0.15em", boxDecorationBreak: "clone", WebkitBoxDecorationBreak: "clone" }}>
+                    생산 과정에서 온실가스를 줄인
+                  </span>
                 </p>
                 <p>
                   <span
-                    className="text-[clamp(16px,4.85cqw,32px)] underline decoration-[#fff478] decoration-[30%] underline-offset-[0.15em]"
-                    style={{ fontFamily: hakgyo }}
+                    className="text-[clamp(16px,4.85cqw,32px)]"
+                    style={{ fontFamily: hakgyo, backgroundColor: "#fff478", borderRadius: "0.15em", padding: "0 0.15em", boxDecorationBreak: "clone", WebkitBoxDecorationBreak: "clone" }}
                   >
                     인증 받은 농장에서 생산한 축산물
                   </span>
@@ -92,10 +91,7 @@ export default function Quiz1Correct() {
                 </p>
                 <p className="h-[6.36cqw]" aria-hidden="true" />
                 <p className="text-[#206c38]">
-                  <span
-                    className="text-[clamp(16px,4.85cqw,32px)] underline decoration-[#fff478] decoration-[30%] underline-offset-[0.15em]"
-                    style={{ fontFamily: hakgyo }}
-                  >
+                  <span className="text-[clamp(16px,4.85cqw,32px)]" style={{ fontFamily: hakgyo }}>
                     농림축산식품부와 축산물품질평가원
                   </span>
                   <span className="text-[clamp(14px,4.24cqw,28px)]" style={{ fontFamily: pretendard("Regular") }}>
@@ -121,10 +117,7 @@ export default function Quiz1Correct() {
                   온실가스 배출량을 10% 이상 줄인 농가를 인증하는
                 </p>
                 <p className="text-[#206c38]">
-                  <span
-                    className="text-[clamp(16px,4.85cqw,32px)] underline decoration-[#fff478] decoration-[30%] underline-offset-[0.15em]"
-                    style={{ fontFamily: hakgyo }}
-                  >
+                  <span className="text-[clamp(16px,4.85cqw,32px)]" style={{ fontFamily: hakgyo }}>
                     ‘저탄소 축산물 인증제’를 운영
                   </span>
                   <span className="text-[clamp(14px,4.24cqw,28px)] text-black" style={{ fontFamily: pretendard("Regular") }}>

@@ -75,8 +75,8 @@ export default function Quiz2Correct() {
                 </p>
                 <p>
                   <span
-                    className="text-[clamp(16px,4.85cqw,32px)] underline decoration-[#fff478] decoration-[30%] underline-offset-[0.15em]"
-                    style={{ fontFamily: hakgyo }}
+                    className="text-[clamp(16px,4.85cqw,32px)]"
+                    style={{ fontFamily: hakgyo, backgroundColor: "#fff478", borderRadius: "0.15em", padding: "0 0.15em", boxDecorationBreak: "clone", WebkitBoxDecorationBreak: "clone" }}
                   >
                     저탄소 축산물 인증마크를 통해 확인
                   </span>
@@ -98,10 +98,7 @@ export default function Quiz2Correct() {
                   소비자가 쉽게 알아볼 수 있도록
                 </p>
                 <p className="text-[#206c38]">
-                  <span
-                    className="text-[clamp(16px,4.85cqw,32px)] underline decoration-[#fff478] decoration-[30%] underline-offset-[0.15em]"
-                    style={{ fontFamily: hakgyo }}
-                  >
+                  <span className="text-[clamp(16px,4.85cqw,32px)]" style={{ fontFamily: hakgyo }}>
                     저탄소 축산물 인증마크가 표시
                   </span>
                   <span className="text-[clamp(14px,4.24cqw,28px)] text-black" style={{ fontFamily: pretendard("Regular") }}>

@@ -75,8 +75,8 @@ export default function Quiz3Correct() {
                 </p>
                 <p>
                   <span
-                    className="text-[clamp(16px,4.85cqw,32px)] underline decoration-[#fff478] decoration-[30%] underline-offset-[0.15em]"
-                    style={{ fontFamily: hakgyo }}
+                    className="text-[clamp(16px,4.85cqw,32px)]"
+                    style={{ fontFamily: hakgyo, backgroundColor: "#fff478", borderRadius: "0.15em", padding: "0 0.15em", boxDecorationBreak: "clone", WebkitBoxDecorationBreak: "clone" }}
                   >
                     이디야커피를 비롯한 우리 주변
                   </span>
@@ -92,10 +92,7 @@ export default function Quiz3Correct() {
                   이디야커피는 우유가 들어가는 전 제품에
                 </p>
                 <p className="text-[#206c38]">
-                  <span
-                    className="text-[clamp(16px,4.85cqw,32px)] underline decoration-[#fff478] decoration-[30%] underline-offset-[0.15em]"
-                    style={{ fontFamily: hakgyo }}
-                  >
+                  <span className="text-[clamp(16px,4.85cqw,32px)]" style={{ fontFamily: hakgyo }}>
                     저탄소 인증 우유를 사용
                   </span>
                   <span className="text-[clamp(14px,4.24cqw,28px)] text-black" style={{ fontFamily: pretendard("Regular") }}>
@@ -109,10 +106,7 @@ export default function Quiz3Correct() {
                   전국 대형마트와 다양한 유통매장에서도
                 </p>
                 <p className="text-[#206c38]">
-                  <span
-                    className="text-[clamp(16px,4.85cqw,32px)] underline decoration-[#fff478] decoration-[30%] underline-offset-[0.15em]"
-                    style={{ fontFamily: hakgyo }}
-                  >
+                  <span className="text-[clamp(16px,4.85cqw,32px)]" style={{ fontFamily: hakgyo }}>
                     저탄소 인증 축산물을 구매
                   </span>
                   <span className="text-[clamp(14px,4.24cqw,28px)] text-black" style={{ fontFamily: pretendard("Regular") }}>
