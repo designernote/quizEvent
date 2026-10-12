@@ -74,20 +74,16 @@ export default function Quiz1Correct() {
                   저탄소 인증 축산물은
                 </p>
                 <p className="whitespace-nowrap text-[clamp(16px,4.85cqw,32px)]" style={{ fontFamily: hakgyo }}>
-                  <span style={{ display: "inline-block", borderBottom: "2px dashed #B9DAC6", paddingBottom: "4px" }}>
-                    <span style={{ backgroundColor: "#fff478", borderRadius: "0.15em", padding: "0 0.15em" }}>
-                      생산 과정에서 온실가스를 줄인
-                    </span>
+                  <span style={{ backgroundColor: "#fff478", borderRadius: "0.15em", padding: "0 0.15em" }}>
+                    생산 과정에서 온실가스를 줄인
                   </span>
                 </p>
                 <p className="whitespace-nowrap">
                   <span
                     className="text-[clamp(16px,4.85cqw,32px)]"
-                    style={{ fontFamily: hakgyo, display: "inline-block", borderBottom: "2px dashed #B9DAC6", paddingBottom: "4px" }}
+                    style={{ fontFamily: hakgyo, backgroundColor: "#fff478", borderRadius: "0.15em", padding: "0 0.15em" }}
                   >
-                    <span style={{ backgroundColor: "#fff478", borderRadius: "0.15em", padding: "0 0.15em" }}>
-                      인증 받은 농장에서 생산한 축산물
-                    </span>
+                    인증 받은 농장에서 생산한 축산물
                   </span>
                   <span className="text-[clamp(14px,4.24cqw,28px)]" style={{ fontFamily: pretendard("Regular") }}>
                     입니다!
