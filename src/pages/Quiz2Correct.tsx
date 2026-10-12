@@ -76,9 +76,11 @@ export default function Quiz2Correct() {
                 <p className="whitespace-nowrap">
                   <span
                     className="text-[clamp(14px,4.4cqw,29px)]"
-                    style={{ fontFamily: hakgyo, backgroundColor: "#fff478", borderRadius: "0.15em", padding: "0 0.15em" }}
+                    style={{ fontFamily: hakgyo, display: "inline-block", lineHeight: 1, paddingBottom: "4px", borderBottom: "2px dashed #B9DAC6" }}
                   >
-                    저탄소 축산물 인증마크를 통해 확인
+                    <span style={{ backgroundColor: "#fff478", borderRadius: "0.15em", padding: "0 0.15em" }}>
+                      저탄소 축산물 인증마크를 통해 확인
+                    </span>
                   </span>
                   <span className="text-[clamp(13px,3.8cqw,25px)]" style={{ fontFamily: pretendard("Regular") }}>
                     할 수 있습니다!
