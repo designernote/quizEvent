@@ -75,17 +75,8 @@ export default function Quiz2Correct() {
                 </p>
                 <p className="whitespace-nowrap">
                   <span
-                    className="text-[clamp(14px,4.4cqw,29px)]"
-                    style={{
-                      fontFamily: hakgyo,
-                      display: "inline-block",
-                      lineHeight: 1,
-                      paddingBottom: "7px",
-                      backgroundImage: "repeating-linear-gradient(to right, #B9DAC6, #B9DAC6 5px, transparent 5px, transparent 10px)",
-                      backgroundPosition: "bottom",
-                      backgroundSize: "10px 2px",
-                      backgroundRepeat: "repeat-x",
-                    }}
+                    className="text-[clamp(14px,4.4cqw,29px)] relative inline-block after:absolute after:inset-x-0 after:-bottom-2 after:h-[2px] after:content-[''] after:[background-image:repeating-linear-gradient(to_right,#B9DAC6,#B9DAC6_5px,transparent_5px,transparent_10px)]"
+                    style={{ fontFamily: hakgyo }}
                   >
                     <span style={{ backgroundColor: "#fff478", borderRadius: "0.15em", padding: "0 0.15em" }}>
                       저탄소 축산물 인증마크를 통해 확인
