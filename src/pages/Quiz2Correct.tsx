@@ -66,7 +66,7 @@ export default function Quiz2Correct() {
             >
               <img src={imgTextLines} alt="" className="pointer-events-none absolute top-[5.91cqw] left-0 w-full" />
 
-              <div className="relative text-center leading-[1.5]">
+              <div className="relative text-center leading-[1.5]" style={{ wordBreak: "keep-all" }}>
                 <p
                   className="text-[clamp(14px,4.24cqw,28px)]"
                   style={{ fontFamily: pretendard("Regular") }}

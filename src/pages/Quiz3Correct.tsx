@@ -66,7 +66,7 @@ export default function Quiz3Correct() {
             >
               <img src={imgTextLines} alt="" className="pointer-events-none absolute top-[6.06cqw] left-[0.36%] w-[99.11%]" />
 
-              <div className="relative text-center leading-[1.5]">
+              <div className="relative text-center leading-[1.5]" style={{ wordBreak: "keep-all" }}>
                 <p
                   className="text-[clamp(14px,4.24cqw,28px)]"
                   style={{ fontFamily: pretendard("Regular") }}
