@@ -21,6 +21,7 @@ export default defineConfig(({ mode }) => {
 react(),
       tailwindcss(),
       figmaSiteConfiguration(siteConfiguration),
+      deploymentPathFixups(),
       figmaErrorOverlayReplay(),
       figmaReactRefreshBoundaryFallback(),
       figmaMakeKitPlugin({ storiesGlob: '/src/**/*.stories.{ts,tsx,js,jsx}' }),
@@ -89,7 +90,7 @@ function figmaSiteConfiguration(config: FigmaSiteConfiguration): Plugin {
   const title = config.title ?? "Figma Make App"
   const description = config.description ?? ''
   const favicon = config.icons?.icon ?? ''
-  const socialImage = config.openGraph?.image ?? ''
+  const socialImage = config.openGraph?.image || 'https://designernote.github.io/quizEvent/og-image.png'
   const language = sanitizeHtmlValue(config.language) || 'en'
   const googleAnalyticsId = sanitizeHtmlValue(config.analytics?.googleAnalyticsId)
   const headStart = config.customScripts?.headStart ?? ''
@@ -213,6 +214,50 @@ function figmaSiteConfiguration(config: FigmaSiteConfiguration): Plugin {
           tags,
         }
       },
+    },
+  }
+}
+
+/**
+ * Every Figma Make resync overwrites page source with a fresh export
+ * that assumes root ('/') deployment: a hardcoded `/assets` path
+ * prefix and a basename-less BrowserRouter. Both break asset loading
+ * and client-side routing once GitHub Pages serves the app from the
+ * /quizEvent/ subpath. Patch the known patterns back at build time so
+ * every push to main deploys correctly without re-editing source
+ * files after each sync.
+ */
+function deploymentPathFixups(): Plugin {
+  return {
+    name: 'deployment-path-fixups',
+    enforce: 'pre',
+    transform(code, id) {
+      if (id.includes('/node_modules/')) return null
+      const isScript = /\.[jt]sx?(?:\?|$)/.test(id)
+      const isStyle = /\.css(?:\?|$)/.test(id)
+      if (!isScript && !isStyle) return null
+
+      let result = code
+      if (isScript) {
+        result = result.replace(
+          /const assetPathPrefix = ["']\/assets["'];/g,
+          'const assetPathPrefix = `${import.meta.env.BASE_URL}assets`;',
+        )
+        result = result.replace(
+          /<BrowserRouter>/g,
+          '<BrowserRouter basename={import.meta.env.BASE_URL}>',
+        )
+      }
+      if (isStyle) {
+        // Figma Make's export pins a jsdelivr gh path that 404s; the npm-mirrored path serves the same files.
+        result = result.replaceAll(
+          'cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/',
+          'cdn.jsdelivr.net/npm/pretendard@1.3.9/',
+        )
+      }
+
+      if (result === code) return null
+      return { code: result, map: null }
     },
   }
 }
