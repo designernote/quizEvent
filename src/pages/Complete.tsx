@@ -1,7 +1,4 @@
-const entryFormUrl =
-  "https://docs.google.com/forms/d/e/1FAIpQLSdJ_lg_NwbKGzMRPKMNxHXhsog-OfUzGcJG31dUMYm0B1wvQw/viewform";
-
-const assetPathPrefix = `${import.meta.env.BASE_URL}assets`;
+const assetPathPrefix = "/assets";
 const imgCharacters = `${assetPathPrefix}/0d53e.png`;
 const imgFence = `${assetPathPrefix}/b2669.svg`;
 const imgGrass = `${assetPathPrefix}/01bf0.svg`;
@@ -86,7 +83,7 @@ export default function Complete() {
             추첨을 위해 아래 개인정보를 입력해주세요!
           </p>
           <a
-            href={entryFormUrl}
+            href="http://forms.gle/v5p1QAm8JnM1GsMR8"
             target="_blank"
             rel="noopener noreferrer"
             className="flex h-[clamp(72px,12.15cqw,96px)] w-[min(80cqw,400px)] cursor-pointer items-center justify-center gap-[min(6.33cqw,50px)] rounded-[999px] bg-[#206c38] pl-[min(6.33cqw,50px)] pr-[min(4.05cqw,32px)] transition-opacity hover:opacity-90 active:opacity-75"

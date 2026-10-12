@@ -2,7 +2,7 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import WrongAnswer from "./WrongAnswer";
 
-const assetPathPrefix = `${import.meta.env.BASE_URL}assets`;
+const assetPathPrefix = "/assets";
 const imgBull = `${assetPathPrefix}/fa1ea.png`;
 const imgMilk = `${assetPathPrefix}/81b13.png`;
 const imgMinistry = `${assetPathPrefix}/0e6be.svg`;
@@ -10,6 +10,7 @@ const imgLivestock = `${assetPathPrefix}/9632e.svg`;
 const imgLivestockIcon = `${assetPathPrefix}/11df2.svg`;
 const imgEdiya = `${assetPathPrefix}/5de1f.svg`;
 const imgBgDeco = `${assetPathPrefix}/d4de7.svg`;
+const imgCardSurface = `${assetPathPrefix}/0ae6f.svg`;
 const imgCardBg = `${assetPathPrefix}/53ce9.svg`;
 const imgDivider = `${assetPathPrefix}/6815e.svg`;
 const imgBadgeTail = `${assetPathPrefix}/5bc33.svg`;
@@ -24,9 +25,16 @@ export default function Quiz2() {
     <div className="relative">
       <main className="min-h-dvh w-full overflow-hidden bg-[#d3e9dc]">
         <div className="flex w-full flex-col items-center">
-          <section className="anim-card-in relative mt-[53px] aspect-[660/861] w-[calc(100%-2rem)] max-w-[660px] rounded-[29px] bg-white [container-type:inline-size]">
+          <section className="anim-card-in relative mt-[53px] aspect-[660/861] w-[calc(100%-2rem)] max-w-[660px] [container-type:inline-size]">
+            <img
+              src={imgCardSurface}
+              alt=""
+              className="pointer-events-none absolute -inset-x-[0.61%] -inset-y-[0.47%] h-[100.93%] w-[101.21%]"
+            />
             <div className="pointer-events-none absolute inset-x-[3.48%] top-[3.02%] bottom-[2.9%]">
-              <img src={imgCardBg} alt="" className="size-full object-fill" />
+              <div className="absolute -inset-x-[0.65%] -inset-y-[0.49%]">
+                <img src={imgCardBg} alt="" className="size-full object-fill" />
+              </div>
             </div>
 
             <div

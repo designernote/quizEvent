@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router-dom";
 
-const assetPathPrefix = `${import.meta.env.BASE_URL}assets`;
+const assetPathPrefix = "/assets";
 const imgSupermarket = `${assetPathPrefix}/e9ef9.png`;
 const imgMinistry = `${assetPathPrefix}/0e6be.svg`;
 const imgLivestock = `${assetPathPrefix}/9632e.svg`;
@@ -61,57 +61,53 @@ export default function Quiz3Correct() {
             </div>
 
             <div
-              className="anim-float-up-in relative mt-[7.58cqw] min-h-[44.7cqw] w-full"
+              className="anim-float-up-in relative mt-[7.58cqw] h-[44.7cqw] w-full"
               style={{ animationDelay: "0.35s" }}
             >
               <img src={imgTextLines} alt="" className="pointer-events-none absolute top-[6.06cqw] left-[0.36%] w-[99.11%]" />
+              <span className="absolute top-[9.24cqw] left-0 h-[3.03cqw] w-[56.15%] bg-[#fff478]" />
 
-              <div className="relative text-center leading-[6.36cqw]" style={{ wordBreak: "keep-all" }}>
+              <div className="relative text-center leading-[6.36cqw]">
                 <p
-                  className="text-[clamp(14px,4.24cqw,28px)]"
+                  className="whitespace-nowrap text-[clamp(10px,4.24cqw,28px)]"
                   style={{ fontFamily: pretendard("Regular") }}
                 >
                   저탄소 인증 축산물은
                 </p>
                 <p className="whitespace-nowrap">
-                  <span
-                    className="text-[clamp(14px,4.3cqw,28px)] relative inline-block after:absolute after:inset-x-0 after:-bottom-2 after:h-[2px] after:content-[''] after:[background-image:repeating-linear-gradient(to_right,#B9DAC6,#B9DAC6_5px,transparent_5px,transparent_10px)]"
-                    style={{ fontFamily: hakgyo }}
-                  >
-                    <span style={{ backgroundColor: "#fff478", borderRadius: "0.15em", padding: "0 0.15em" }}>
-                      이디야커피를 비롯한 우리 주변
-                    </span>
+                  <span className="text-[clamp(12px,4.85cqw,32px)]" style={{ fontFamily: hakgyo }}>
+                    이디야커피를 비롯한 우리 주변
                   </span>
-                  <span className="text-[clamp(13px,3.7cqw,25px)]" style={{ fontFamily: pretendard("Regular") }}>
+                  <span className="text-[clamp(10px,4.24cqw,28px)]" style={{ fontFamily: pretendard("Regular") }}>
                     에서 만날 수 있습니다!
                   </span>
                 </p>
                 <p className="h-[6.36cqw]" aria-hidden="true" />
                 <p
-                  className="text-[clamp(14px,4.24cqw,28px)]"
+                  className="whitespace-nowrap text-[clamp(10px,4.24cqw,28px)]"
                   style={{ fontFamily: pretendard("Regular") }}
                 >
                   이디야커피는 우유가 들어가는 전 제품에
                 </p>
-                <p className="text-[#206c38]">
-                  <span className="text-[clamp(16px,4.85cqw,32px)]" style={{ fontFamily: hakgyo }}>
+                <p className="whitespace-nowrap text-[#206c38]">
+                  <span className="text-[clamp(12px,4.85cqw,32px)]" style={{ fontFamily: hakgyo }}>
                     저탄소 인증 우유를 사용
                   </span>
-                  <span className="text-[clamp(14px,4.24cqw,28px)] text-black" style={{ fontFamily: pretendard("Regular") }}>
+                  <span className="text-[clamp(10px,4.24cqw,28px)] text-black" style={{ fontFamily: pretendard("Regular") }}>
                     하고 있으며,
                   </span>
                 </p>
                 <p
-                  className="text-[clamp(14px,4.24cqw,28px)]"
+                  className="whitespace-nowrap text-[clamp(10px,4.24cqw,28px)]"
                   style={{ fontFamily: pretendard("Regular") }}
                 >
                   전국 대형마트와 다양한 유통매장에서도
                 </p>
-                <p className="text-[#206c38]">
-                  <span className="text-[clamp(16px,4.85cqw,32px)]" style={{ fontFamily: hakgyo }}>
+                <p className="whitespace-nowrap text-[#206c38]">
+                  <span className="text-[clamp(12px,4.85cqw,32px)]" style={{ fontFamily: hakgyo }}>
                     저탄소 인증 축산물을 구매
                   </span>
-                  <span className="text-[clamp(14px,4.24cqw,28px)] text-black" style={{ fontFamily: pretendard("Regular") }}>
+                  <span className="text-[clamp(10px,4.24cqw,28px)] text-black" style={{ fontFamily: pretendard("Regular") }}>
                     할 수 있습니다.
                   </span>
                 </p>
@@ -119,7 +115,7 @@ export default function Quiz3Correct() {
             </div>
 
             <p
-              className="mt-[7.58cqw] whitespace-nowrap text-center text-[clamp(12px,3.18cqw,21px)] leading-[4.55cqw] text-[#868686]"
+              className="mt-[7.58cqw] whitespace-nowrap text-center text-[clamp(9px,3.18cqw,21px)] leading-[4.55cqw] text-[#868686]"
               style={{ fontFamily: pretendard("Regular") }}
             >
               ※ 커피 한잔부터 장보기까지 일상에서 저탄소 소비를 실천해 보세요!

@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router-dom";
 
-const assetPathPrefix = `${import.meta.env.BASE_URL}assets`;
+const assetPathPrefix = "/assets";
 const imgProducts = `${assetPathPrefix}/82711.png`;
 const imgMinistry = `${assetPathPrefix}/0e6be.svg`;
 const imgLivestock = `${assetPathPrefix}/9632e.svg`;
@@ -61,49 +61,45 @@ export default function Quiz2Correct() {
             </div>
 
             <div
-              className="anim-float-up-in relative mt-[7.58cqw] min-h-[38.33cqw] w-full"
+              className="anim-float-up-in relative mt-[7.58cqw] h-[38.33cqw] w-full"
               style={{ animationDelay: "0.35s" }}
             >
               <img src={imgTextLines} alt="" className="pointer-events-none absolute top-[5.91cqw] left-0 w-full" />
+              <span className="absolute top-[9.24cqw] left-[1.44%] h-[3.03cqw] w-[67.09%] bg-[#fff478]" />
 
-              <div className="relative text-center leading-[6.36cqw]" style={{ wordBreak: "keep-all" }}>
+              <div className="relative text-center leading-[6.36cqw]">
                 <p
-                  className="text-[clamp(14px,4.24cqw,28px)]"
+                  className="whitespace-nowrap text-[clamp(10px,4.24cqw,28px)]"
                   style={{ fontFamily: pretendard("Regular") }}
                 >
                   제품에 표시된
                 </p>
                 <p className="whitespace-nowrap">
-                  <span
-                    className="text-[clamp(14px,4.4cqw,29px)] relative inline-block after:absolute after:inset-x-0 after:-bottom-2 after:h-[2px] after:content-[''] after:[background-image:repeating-linear-gradient(to_right,#B9DAC6,#B9DAC6_5px,transparent_5px,transparent_10px)]"
-                    style={{ fontFamily: hakgyo }}
-                  >
-                    <span style={{ backgroundColor: "#fff478", borderRadius: "0.15em", padding: "0 0.15em" }}>
-                      저탄소 축산물 인증마크를 통해 확인
-                    </span>
+                  <span className="text-[clamp(12px,4.85cqw,32px)]" style={{ fontFamily: hakgyo }}>
+                    저탄소 축산물 인증마크를 통해 확인
                   </span>
-                  <span className="text-[clamp(13px,3.8cqw,25px)]" style={{ fontFamily: pretendard("Regular") }}>
+                  <span className="text-[clamp(10px,4.24cqw,28px)]" style={{ fontFamily: pretendard("Regular") }}>
                     할 수 있습니다!
                   </span>
                 </p>
                 <p className="h-[6.36cqw]" aria-hidden="true" />
                 <p
-                  className="text-[clamp(14px,4.24cqw,28px)]"
+                  className="whitespace-nowrap text-[clamp(10px,4.24cqw,28px)]"
                   style={{ fontFamily: pretendard("Regular") }}
                 >
                   저탄소 인증을 받은 한우·돼지고기·우유 제품에는
                 </p>
                 <p
-                  className="text-[clamp(14px,4.24cqw,28px)]"
+                  className="whitespace-nowrap text-[clamp(10px,4.24cqw,28px)]"
                   style={{ fontFamily: pretendard("Regular") }}
                 >
                   소비자가 쉽게 알아볼 수 있도록
                 </p>
-                <p className="text-[#206c38]">
-                  <span className="text-[clamp(16px,4.85cqw,32px)]" style={{ fontFamily: hakgyo }}>
+                <p className="whitespace-nowrap text-[#206c38]">
+                  <span className="text-[clamp(12px,4.85cqw,32px)]" style={{ fontFamily: hakgyo }}>
                     저탄소 축산물 인증마크가 표시
                   </span>
-                  <span className="text-[clamp(14px,4.24cqw,28px)] text-black" style={{ fontFamily: pretendard("Regular") }}>
+                  <span className="text-[clamp(10px,4.24cqw,28px)] text-black" style={{ fontFamily: pretendard("Regular") }}>
                     됩니다.
                   </span>
                 </p>
@@ -111,7 +107,7 @@ export default function Quiz2Correct() {
             </div>
 
             <p
-              className="mt-[7.58cqw] whitespace-nowrap text-center text-[clamp(13px,3.18cqw,21px)] leading-[4.55cqw] text-[#868686]"
+              className="mt-[7.58cqw] whitespace-nowrap text-center text-[clamp(9px,3.18cqw,21px)] leading-[4.55cqw] text-[#868686]"
               style={{ fontFamily: pretendard("Regular") }}
             >
               ※ 제품을 구매할 때 포장지에 표시된

@@ -17,7 +17,7 @@ function ScrollToTop() {
 
 export default function App() {
   return (
-    <BrowserRouter basename={import.meta.env.BASE_URL}>
+    <BrowserRouter>
       <ScrollToTop />
       <Routes>
         <Route path="/" element={<Home />} />
