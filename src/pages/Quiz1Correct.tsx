@@ -61,28 +61,29 @@ export default function Quiz1Correct() {
             </div>
 
             <div
-              className="anim-float-up-in relative mt-[7.58cqw] h-[57.42cqw] w-full"
+              className="anim-float-up-in relative mt-[7.58cqw] min-h-[57.42cqw] w-full"
               style={{ animationDelay: "0.35s" }}
             >
               <img src={imgTextLines} alt="" className="pointer-events-none absolute top-[6.52cqw] left-0 w-full" />
-              <span className="absolute top-[9.24cqw] left-[20.32%] h-[3.03cqw] w-[58.99%] bg-[#fff478]" />
-              <span className="absolute top-[15.76cqw] left-[11.51%] h-[3.03cqw] w-[62.77%] bg-[#fff478]" />
 
-              <div className="relative text-center leading-[6.36cqw]">
+              <div className="relative text-center leading-[1.5]">
                 <p
-                  className="whitespace-nowrap text-[clamp(14px,4.24cqw,28px)]"
+                  className="text-[clamp(14px,4.24cqw,28px)]"
                   style={{ fontFamily: pretendard("Regular") }}
                 >
                   저탄소 인증 축산물은
                 </p>
                 <p
-                  className="whitespace-nowrap text-[clamp(16px,4.85cqw,32px)]"
+                  className="text-[clamp(16px,4.85cqw,32px)] underline decoration-[#fff478] decoration-[30%] underline-offset-[0.15em]"
                   style={{ fontFamily: hakgyo }}
                 >
                   생산 과정에서 온실가스를 줄인
                 </p>
-                <p className="whitespace-nowrap">
-                  <span className="text-[clamp(16px,4.85cqw,32px)]" style={{ fontFamily: hakgyo }}>
+                <p>
+                  <span
+                    className="text-[clamp(16px,4.85cqw,32px)] underline decoration-[#fff478] decoration-[30%] underline-offset-[0.15em]"
+                    style={{ fontFamily: hakgyo }}
+                  >
                     인증 받은 농장에서 생산한 축산물
                   </span>
                   <span className="text-[clamp(14px,4.24cqw,28px)]" style={{ fontFamily: pretendard("Regular") }}>
@@ -90,7 +91,7 @@ export default function Quiz1Correct() {
                   </span>
                 </p>
                 <p className="h-[6.36cqw]" aria-hidden="true" />
-                <p className="whitespace-nowrap text-[#206c38]">
+                <p className="text-[#206c38]">
                   <span className="text-[clamp(16px,4.85cqw,32px)]" style={{ fontFamily: hakgyo }}>
                     농림축산식품부와 축산물품질평가원
                   </span>
@@ -99,24 +100,24 @@ export default function Quiz1Correct() {
                   </span>
                 </p>
                 <p
-                  className="whitespace-nowrap text-[clamp(14px,4.24cqw,28px)]"
+                  className="text-[clamp(14px,4.24cqw,28px)]"
                   style={{ fontFamily: pretendard("Regular") }}
                 >
                   한우·젖소·돼지 농가 중 탄소 감축 기술을
                 </p>
                 <p
-                  className="whitespace-nowrap text-[clamp(14px,4.24cqw,28px)]"
+                  className="text-[clamp(14px,4.24cqw,28px)]"
                   style={{ fontFamily: pretendard("Regular") }}
                 >
                   적용하고, 평균보다
                 </p>
                 <p
-                  className="whitespace-nowrap text-[clamp(14px,4.24cqw,28px)]"
+                  className="text-[clamp(14px,4.24cqw,28px)]"
                   style={{ fontFamily: pretendard("Regular") }}
                 >
                   온실가스 배출량을 10% 이상 줄인 농가를 인증하는
                 </p>
-                <p className="whitespace-nowrap text-[#206c38]">
+                <p className="text-[#206c38]">
                   <span className="text-[clamp(16px,4.85cqw,32px)]" style={{ fontFamily: hakgyo }}>
                     ‘저탄소 축산물 인증제’를 운영
                   </span>
