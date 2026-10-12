@@ -74,7 +74,17 @@ export default function Quiz1Correct() {
                   저탄소 인증 축산물은
                 </p>
                 <p className="whitespace-nowrap text-[clamp(16px,4.85cqw,32px)]" style={{ fontFamily: hakgyo }}>
-                  <span style={{ display: "inline-block", lineHeight: 1, paddingBottom: "5px", borderBottom: "2px dashed #B9DAC6" }}>
+                  <span
+                    style={{
+                      display: "inline-block",
+                      lineHeight: 1,
+                      paddingBottom: "7px",
+                      backgroundImage: "repeating-linear-gradient(to right, #B9DAC6, #B9DAC6 5px, transparent 5px, transparent 10px)",
+                      backgroundPosition: "bottom",
+                      backgroundSize: "10px 2px",
+                      backgroundRepeat: "repeat-x",
+                    }}
+                  >
                     <span style={{ backgroundColor: "#fff478", borderRadius: "0.15em", padding: "0 0.15em" }}>
                       생산 과정에서 온실가스를 줄인
                     </span>
@@ -83,7 +93,16 @@ export default function Quiz1Correct() {
                 <p className="whitespace-nowrap">
                   <span
                     className="text-[clamp(16px,4.85cqw,32px)]"
-                    style={{ fontFamily: hakgyo, display: "inline-block", lineHeight: 1, paddingBottom: "5px", borderBottom: "2px dashed #B9DAC6" }}
+                    style={{
+                      fontFamily: hakgyo,
+                      display: "inline-block",
+                      lineHeight: 1,
+                      paddingBottom: "7px",
+                      backgroundImage: "repeating-linear-gradient(to right, #B9DAC6, #B9DAC6 5px, transparent 5px, transparent 10px)",
+                      backgroundPosition: "bottom",
+                      backgroundSize: "10px 2px",
+                      backgroundRepeat: "repeat-x",
+                    }}
                   >
                     <span style={{ backgroundColor: "#fff478", borderRadius: "0.15em", padding: "0 0.15em" }}>
                       인증 받은 농장에서 생산한 축산물
