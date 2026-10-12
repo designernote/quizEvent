@@ -66,7 +66,7 @@ export default function Quiz1Correct() {
             >
               <img src={imgTextLines} alt="" className="pointer-events-none absolute top-[6.52cqw] left-0 w-full" />
 
-              <div className="relative text-center leading-[1.5]" style={{ wordBreak: "keep-all" }}>
+              <div className="relative text-center leading-[6.36cqw]" style={{ wordBreak: "keep-all" }}>
                 <p
                   className="text-[clamp(14px,4.24cqw,28px)]"
                   style={{ fontFamily: pretendard("Regular") }}
@@ -74,16 +74,20 @@ export default function Quiz1Correct() {
                   저탄소 인증 축산물은
                 </p>
                 <p className="whitespace-nowrap text-[clamp(16px,4.85cqw,32px)]" style={{ fontFamily: hakgyo }}>
-                  <span style={{ backgroundColor: "#fff478", borderRadius: "0.15em", padding: "0.15em 0.15em", boxDecorationBreak: "clone", WebkitBoxDecorationBreak: "clone" }}>
-                    생산 과정에서 온실가스를 줄인
+                  <span style={{ display: "inline-block", borderBottom: "2px dashed #B9DAC6", paddingBottom: "4px" }}>
+                    <span style={{ backgroundColor: "#fff478", borderRadius: "0.15em", padding: "0 0.15em" }}>
+                      생산 과정에서 온실가스를 줄인
+                    </span>
                   </span>
                 </p>
                 <p className="whitespace-nowrap">
                   <span
                     className="text-[clamp(16px,4.85cqw,32px)]"
-                    style={{ fontFamily: hakgyo, backgroundColor: "#fff478", borderRadius: "0.15em", padding: "0.15em 0.15em", boxDecorationBreak: "clone", WebkitBoxDecorationBreak: "clone" }}
+                    style={{ fontFamily: hakgyo, display: "inline-block", borderBottom: "2px dashed #B9DAC6", paddingBottom: "4px" }}
                   >
-                    인증 받은 농장에서 생산한 축산물
+                    <span style={{ backgroundColor: "#fff478", borderRadius: "0.15em", padding: "0 0.15em" }}>
+                      인증 받은 농장에서 생산한 축산물
+                    </span>
                   </span>
                   <span className="text-[clamp(14px,4.24cqw,28px)]" style={{ fontFamily: pretendard("Regular") }}>
                     입니다!
