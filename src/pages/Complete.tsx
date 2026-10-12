@@ -1,4 +1,4 @@
-const assetPathPrefix = `${import.meta.env.BASE_URL}assets`;
+const assetPathPrefix = "/assets";
 const imgCharacters = `${assetPathPrefix}/0d53e.png`;
 const imgFence = `${assetPathPrefix}/b2669.svg`;
 const imgGrass = `${assetPathPrefix}/01bf0.svg`;
@@ -19,7 +19,7 @@ export default function Complete() {
         <img
           src={imgCloud}
           alt=""
-          className="pointer-events-none absolute top-[clamp(34px,8.35cqw,66px)] left-1/2 w-[min(99.87cqw,789px)] -translate-x-1/2"
+          className="anim-cloud-drift anim-cloud-drift-slow pointer-events-none absolute top-[clamp(34px,8.35cqw,66px)] left-1/2 w-[min(99.87cqw,789px)] -translate-x-1/2"
         />
         <img
           src={imgFence}
@@ -29,7 +29,14 @@ export default function Complete() {
         <img
           src={imgGrass}
           alt=""
-          className="pointer-events-none absolute top-[clamp(550px,85.19cqw,673px)] left-[calc(50%+min(1.39cqw,11px))] w-[min(109.36cqw,864px)] -translate-x-1/2"
+          className="pointer-events-none absolute top-[clamp(550px,85.19cqw,673px)] left-[calc(50%-6cqw)] w-[min(116cqw,916px)] -translate-x-1/2"
+          style={{ clipPath: "inset(0 50% 0 0)" }}
+        />
+        <img
+          src={imgGrass}
+          alt=""
+          className="pointer-events-none absolute top-[clamp(500px,78.86cqw,623px)] left-[calc(50%+6cqw)] w-[min(105cqw,830px)] -translate-x-1/2"
+          style={{ clipPath: "inset(0 0 0 50%)" }}
         />
 
         <h1
@@ -104,10 +111,10 @@ export default function Complete() {
       <section className="relative z-10 flex w-full justify-center bg-[#73c486] px-[clamp(24px,8.86cqw,70px)] py-[clamp(42px,8.86cqw,70px)]">
         <div className="flex w-full max-w-[644px] flex-col gap-[15px]">
           <div className="flex items-center gap-[9px]">
-            <div className="relative size-[28px] shrink-0">
-              <img src={imgWarningIcon} alt="" className="size-[28px]" />
+            <div className="relative z-10 size-[28px] shrink-0" aria-hidden="true">
+              <img src={imgWarningIcon} alt="" className="absolute inset-0 z-0 block size-[28px]" />
               <span
-                className="absolute top-[2px] left-[10px] text-[26px] leading-[38px] text-[#65b384]"
+                className="absolute inset-0 z-10 flex items-center justify-center text-[20px] leading-none text-[#65b384]"
                 style={{ fontFamily: pretendard("Bold"), fontWeight: 700 }}
               >
                 !

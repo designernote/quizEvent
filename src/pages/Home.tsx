@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router-dom";
 
-const assetPathPrefix = `${import.meta.env.BASE_URL}assets`;
+const assetPathPrefix = "/assets";
 const imgChatGpt = `${assetPathPrefix}/774a4.png`;
 const imgGroup8 = `${assetPathPrefix}/e4279.svg`;
 const imgFence = `${assetPathPrefix}/bc9cb.svg`;
@@ -16,16 +16,24 @@ export default function Home() {
   const navigate = useNavigate();
 
   return (
-    <div className="min-h-screen w-full flex flex-col items-center" style={{ backgroundColor: "#d3e9dc" }}>
-      <div className="w-full max-w-[660px] flex flex-col items-center relative overflow-hidden">
-
-        {/* Cloud */}
-        <div className="w-full flex justify-center mt-8 px-4 relative z-10">
-          <img src={imgCloud} alt="" className="w-[60%] max-w-[400px]" />
+    <div className="flex min-h-screen w-full flex-col items-center" style={{ backgroundColor: "#d3e9dc" }}>
+      <div className="relative flex w-full max-w-[660px] flex-col items-center overflow-hidden [container-type:inline-size]">
+        {/* Background scenery */}
+        <div className="pointer-events-none absolute top-[33.8cqw] left-1/2 z-0 w-[99.87cqw] -translate-x-1/2">
+          <img src={imgCloud} alt="" className="anim-cloud-drift w-full" />
+        </div>
+        <div className="pointer-events-none absolute top-[65.44cqw] left-[calc(50%+4.62cqw)] z-[1] w-[256.84cqw] -translate-x-1/2 mix-blend-multiply">
+          <img src={imgFence} alt="" className="w-full" />
+        </div>
+        <div className="pointer-events-none absolute top-[90.38cqw] left-[calc(50%-1.14cqw)] z-0 w-[109.36cqw] -translate-x-1/2">
+          <img src={imgGrass} alt="" className="w-full" />
         </div>
 
         {/* Banner pill */}
-        <div className="relative z-10 mt-4 inline-flex items-center justify-center anim-float-up-in" style={{ animationDelay: "0.1s" }}>
+        <div
+          className="anim-float-up-in relative z-10 mt-[13.42cqw] inline-flex items-center justify-center"
+          style={{ animationDelay: "0.1s" }}
+        >
           <img src={imgBannerBg} alt="" className="h-[48px]" />
           <span className="absolute inset-0 flex items-center justify-center text-white"
             style={{ fontFamily: "'Mango Byeolbyeol:Regular', sans-serif", fontSize: "24px", paddingBottom: "8px" }}>
@@ -56,13 +64,8 @@ export default function Home() {
           </p>
         </div>
 
-        {/* Characters & fence scene */}
+        {/* Character scene */}
         <div className="relative -mt-4 aspect-[11/6] w-full">
-          {/* Fence behind characters */}
-          <div className="absolute w-[140%] left-[-20%]" style={{ top: "55%", mixBlendMode: "multiply", zIndex: 1 }}>
-            <img src={imgFence} alt="" className="w-full" />
-          </div>
-
           {/* Character group */}
           <div className="absolute bottom-0 left-1/2 z-[2] aspect-[3/2] w-[81.82%] max-w-[540px] -translate-x-1/2">
             <img
@@ -75,10 +78,6 @@ export default function Home() {
             />
           </div>
 
-          {/* Grass overlay */}
-          <div className="absolute bottom-0 left-[-5%] w-[130%] z-0">
-            <img src={imgGrass} alt="" className="w-full" />
-          </div>
         </div>
 
         {/* START button */}
