@@ -73,14 +73,14 @@ export default function Quiz3Correct() {
                 >
                   저탄소 인증 축산물은
                 </p>
-                <p>
+                <p className="whitespace-nowrap">
                   <span
-                    className="text-[clamp(16px,4.85cqw,32px)]"
+                    className="text-[clamp(14px,4.3cqw,28px)]"
                     style={{ fontFamily: hakgyo, backgroundColor: "#fff478", borderRadius: "0.15em", padding: "0 0.15em", boxDecorationBreak: "clone", WebkitBoxDecorationBreak: "clone" }}
                   >
                     이디야커피를 비롯한 우리 주변
                   </span>
-                  <span className="text-[clamp(14px,4.24cqw,28px)]" style={{ fontFamily: pretendard("Regular") }}>
+                  <span className="text-[clamp(13px,3.7cqw,25px)]" style={{ fontFamily: pretendard("Regular") }}>
                     에서 만날 수 있습니다!
                   </span>
                 </p>

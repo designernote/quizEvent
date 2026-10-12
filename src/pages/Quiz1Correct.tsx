@@ -73,12 +73,12 @@ export default function Quiz1Correct() {
                 >
                   저탄소 인증 축산물은
                 </p>
-                <p className="text-[clamp(16px,4.85cqw,32px)]" style={{ fontFamily: hakgyo }}>
+                <p className="whitespace-nowrap text-[clamp(16px,4.85cqw,32px)]" style={{ fontFamily: hakgyo }}>
                   <span style={{ backgroundColor: "#fff478", borderRadius: "0.15em", padding: "0 0.15em", boxDecorationBreak: "clone", WebkitBoxDecorationBreak: "clone" }}>
                     생산 과정에서 온실가스를 줄인
                   </span>
                 </p>
-                <p>
+                <p className="whitespace-nowrap">
                   <span
                     className="text-[clamp(16px,4.85cqw,32px)]"
                     style={{ fontFamily: hakgyo, backgroundColor: "#fff478", borderRadius: "0.15em", padding: "0 0.15em", boxDecorationBreak: "clone", WebkitBoxDecorationBreak: "clone" }}
