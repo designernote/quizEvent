@@ -24,7 +24,7 @@ export default function Complete() {
         <img
           src={imgFence}
           alt=""
-          className="pointer-events-none absolute top-[clamp(300px,47.72cqw,377px)] left-[calc(50%+min(4.62cqw,36.5px))] w-[min(256.84cqw,2029px)] -translate-x-1/2 mix-blend-multiply"
+          className="pointer-events-none absolute top-[clamp(300px,47.72cqw,377px)] left-1/2 w-[500cqw] -translate-x-1/2 mix-blend-multiply"
         />
         <img
           src={imgGrass}

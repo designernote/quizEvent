@@ -26,7 +26,10 @@ export default function Home() {
           <img src={imgFence} alt="" className="w-full" />
         </div>
         <div className="pointer-events-none absolute top-[90.38cqw] left-[calc(50%-1.14cqw)] z-0 w-[109.36cqw] -translate-x-1/2">
-          <img src={imgGrass} alt="" className="w-full" />
+          <img src={imgGrass} alt="" className="w-full" style={{ clipPath: "inset(0 0 65% 0)" }} />
+        </div>
+        <div className="pointer-events-none absolute bottom-0 left-[calc(50%-1.14cqw)] z-0 w-[109.36cqw] -translate-x-1/2">
+          <img src={imgGrass} alt="" className="w-full" style={{ clipPath: "inset(65% 0 0 50%)" }} />
         </div>
 
         {/* Banner pill */}
@@ -34,9 +37,11 @@ export default function Home() {
           className="anim-float-up-in relative z-10 mt-[13.42cqw] inline-flex items-center justify-center"
           style={{ animationDelay: "0.1s" }}
         >
-          <img src={imgBannerBg} alt="" className="h-[48px]" />
-          <span className="absolute inset-0 flex items-center justify-center text-white"
-            style={{ fontFamily: "'Mango Byeolbyeol:Regular', sans-serif", fontSize: "24px", paddingBottom: "8px" }}>
+          <img src={imgBannerBg} alt="" className="h-auto w-[min(96cqw,396px)]" />
+          <span
+            className="absolute inset-0 flex items-center justify-center pb-[clamp(5px,1cqw,8px)] whitespace-nowrap text-[clamp(18px,3.4vw,22px)] text-white"
+            style={{ fontFamily: "'Mango Byeolbyeol:Regular', sans-serif" }}
+          >
             저탄소 인증 축산물과 친해지는
           </span>
         </div>
